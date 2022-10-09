@@ -13,12 +13,6 @@ public class Time {
 		time = LocalDateTime.now();
 	}
 	
-	public double getNormalDistribution() {
-		Random ran = new Random(); 	
-		double nxt = ran.nextGaussian(); 
-		return nxt*10;
-	}
-	
 	public DateTimeFormatter getDTF() {
 		return this.dtf;
 	}
