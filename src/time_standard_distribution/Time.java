@@ -2,7 +2,6 @@ package time_standard_distribution;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Random;
 
 public class Time {
 	private DateTimeFormatter dtf; 
