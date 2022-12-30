@@ -1,13 +1,14 @@
 package screensaver;
 
 import java.awt.Font;
-import java.awt.GridBagLayout;
+import java.awt.LayoutManager;
 import java.awt.MouseInfo;
 import java.awt.Point;
 import java.awt.PointerInfo;
 import java.time.LocalDateTime;
 import java.util.Random;
 
+import javax.swing.BoxLayout;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -17,17 +18,35 @@ Since it is a screensaver the code has to detect mouse movement and automaticall
 public class run_screensaver {
 	
 	public static void main(String[] args) {
-		String aboutTime = getOffset();
-		//not necessary in the screensaver version because the headline won't be visible
+		//offset by this number of seconds
+		double std = getOffset();
+		Time time = new Time();
+		LocalDateTime t = time.getTime();
+		//add to current time
+		time.setTime(t.plusSeconds((long) std));
+		String aboutTime = time.getDTF().format(time.getTime());
+		
+		//print time in label as string
 		JFrame frame = new JFrame("current time with expected deviation of 60 seconds");
 		JLabel label = new JLabel(aboutTime);
+		label.setAlignmentX(JLabel.CENTER_ALIGNMENT);
 		label.setFont(new Font("Serif", Font.BOLD, 200));
 		JPanel panel = new JPanel();
+		//align multiple panels in frame vertically
+		panel.setLayout((LayoutManager) new BoxLayout(panel, BoxLayout.Y_AXIS));
+		
+		//save offset to show normal distribution approximation
+		int[] offset = new int[300];
+		for(int i=0; i<offset.length; i++) {
+			offset[i] = 0;
+		}
+		int marg = 60;
+		SeedPlot plot = new SeedPlot(offset, marg);
 		
 		//one panel that is centered
-		panel.setLayout(new GridBagLayout());
-        frame.setLocationRelativeTo(null);		
+		frame.setLocationRelativeTo(null);		
 		panel.add(label);
+		panel.add(plot);
 		frame.add(panel);
 		//activate fullscreen
 		frame.setExtendedState(JFrame.MAXIMIZED_BOTH); 
@@ -51,23 +70,37 @@ public class run_screensaver {
 				System.exit(0);
 			}
 			try {
-	            Thread.sleep(1000);
-	        } catch (InterruptedException e) {
+	            Thread.sleep(990);
+	        } 
+			catch (InterruptedException e) {
 	            e.printStackTrace();
 	        }
-			aboutTime = getOffset();
+			//new offset
+			std = getOffset();
+			time = new Time();
+			t = time.getTime();
+			time.setTime(t.plusSeconds((long) std));
+			aboutTime = time.getDTF().format(time.getTime());
+			//update plot
+			if((int) std < 150 && (int) std >= -150) {
+				offset[(int) std + 150]++;
+			}
+			panel.remove(plot);
+			plot = new SeedPlot(offset, marg);
+			panel.add(plot);
+			
+			//update time
 			label.setText(aboutTime);
 			label.setFont(new Font("Serif", Font.BOLD, 200));
+			panel.revalidate();
+			panel.repaint();
 		}
 		
 	}
-	public static String getOffset() {
+	public static double getOffset() {
 		Random rand = new Random();
 		double std = rand.nextGaussian()*60;
-		Time time = new Time();
-		LocalDateTime t = time.getTime();
-		time.setTime(t.plusSeconds((long) std));
-		return time.getDTF().format(time.getTime());
+		return std;
 	}
 	
 	public static boolean equals(int[] a, int[] b) {
