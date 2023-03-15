@@ -1,0 +1,56 @@
+
+
+Version:	3.50
+CmdLine:	C:\Users\lauri\OneDrive\Dokumente\java\time_standard_distribution\src\screensaver\screensaver.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Users\lauri\OneDrive\Dokumente\java\time_standard_distribution\src\screensaver\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+Substitute:	JAVA_HOME = 
+Substitute:	PATH = C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\lauri\Documents\uni\wima1\matlab\R2020a\runtime\win64;C:\Users\lauri\Documents\uni\wima1\matlab\R2020a\bin;C:\Program Files\MATLAB\R2020a\runtime\win64;C:\Program Files\MATLAB\R2020a\bin;C:\Program Files\Git\cmd;C:\Users\lauri\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\lauri\AppData\Local\Programs\Python\Python39\;C:\Users\lauri\AppData\Local\Microsoft\WindowsApps;C:\Users\lauri\Documents\uni\wima1\latex\mitex\miktex\bin\x64\;C:\Users\lauri\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Program Files\Java\jdk-19\bin
+JRE paths:	;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\lauri\Documents\uni\wima1\matlab\R2020a\runtime\win64;C:\Users\lauri\Documents\uni\wima1\matlab\R2020a\bin;C:\Program Files\MATLAB\R2020a\runtime\win64;C:\Program Files\MATLAB\R2020a\bin;C:\Program Files\Git\cmd;C:\Users\lauri\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\lauri\AppData\Local\Programs\Python\Python39\;C:\Users\lauri\AppData\Local\Microsoft\WindowsApps;C:\Users\lauri\Documents\uni\wima1\latex\mitex\miktex\bin\x64\;C:\Users\lauri\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Program Files\Java\jdk-19\bin
+Check launcher:	C:\Program Files\Common Files\Oracle\Java\javapath\bin\javaw.exe (not found)
+Check launcher:	C:\WINDOWS\system32\bin\javaw.exe (not found)
+Check launcher:	C:\WINDOWS\bin\javaw.exe (not found)
+Check launcher:	C:\WINDOWS\System32\Wbem\bin\javaw.exe (not found)
+Check launcher:	C:\WINDOWS\System32\WindowsPowerShell\v1.0\bin\javaw.exe (not found)
+Check launcher:	C:\WINDOWS\System32\OpenSSH\bin\javaw.exe (not found)
+Check launcher:	C:\Users\lauri\Documents\uni\wima1\matlab\R2020a\runtime\win64\bin\javaw.exe (not found)
+Check launcher:	C:\Users\lauri\Documents\uni\wima1\matlab\R2020a\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files\MATLAB\R2020a\runtime\win64\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files\MATLAB\R2020a\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files\Git\cmd\bin\javaw.exe (not found)
+Check launcher:	C:\Users\lauri\AppData\Local\Programs\Python\Python39\Scripts\bin\javaw.exe (not found)
+Check launcher:	C:\Users\lauri\AppData\Local\Programs\Python\Python39\bin\javaw.exe (not found)
+Check launcher:	C:\Users\lauri\AppData\Local\Microsoft\WindowsApps\bin\javaw.exe (not found)
+Check launcher:	C:\Users\lauri\Documents\uni\wima1\latex\mitex\miktex\bin\x64\bin\javaw.exe (not found)
+Check launcher:	C:\Users\lauri\AppData\Local\Programs\MiKTeX\miktex\bin\x64\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files\Java\jdk-19\bin\javaw.exe (OK)
+Version string: 1.019.000_001 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jdk-19\bin\javaw.exe
+Launcher args:	-jar "C:\Users\lauri\OneDrive\Dokumente\java\time_standard_distribution\src\screensaver\screensaver.exe"
+Args length:	104/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\Users\lauri\OneDrive\Dokumente\java\time_standard_distribution\src\screensaver\time_distribution.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Users\lauri\OneDrive\Dokumente\java\time_standard_distribution\src\screensaver\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+Substitute:	JAVA_HOME = C:\Program Files\Java\jdk-19
+Substitute:	PATH = C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\lauri\Documents\uni\wima1\matlab\R2020a\runtime\win64;C:\Users\lauri\Documents\uni\wima1\matlab\R2020a\bin;C:\Program Files\MATLAB\R2020a\runtime\win64;C:\Program Files\MATLAB\R2020a\bin;C:\Program Files\Git\cmd;C:\Users\lauri\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\lauri\AppData\Local\Programs\Python\Python39\;C:\Users\lauri\AppData\Local\Microsoft\WindowsApps;C:\Users\lauri\Documents\uni\wima1\latex\mitex\miktex\bin\x64\;C:\Users\lauri\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;;C:\Program Files\Java\jdk-19\bin
+JRE paths:	C:\Program Files\Java\jdk-19;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\lauri\Documents\uni\wima1\matlab\R2020a\runtime\win64;C:\Users\lauri\Documents\uni\wima1\matlab\R2020a\bin;C:\Program Files\MATLAB\R2020a\runtime\win64;C:\Program Files\MATLAB\R2020a\bin;C:\Program Files\Git\cmd;C:\Users\lauri\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\lauri\AppData\Local\Programs\Python\Python39\;C:\Users\lauri\AppData\Local\Microsoft\WindowsApps;C:\Users\lauri\Documents\uni\wima1\latex\mitex\miktex\bin\x64\;C:\Users\lauri\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;;C:\Program Files\Java\jdk-19\bin
+Check launcher:	C:\Program Files\Java\jdk-19\bin\javaw.exe (OK)
+Version string: 1.019.000_001 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jdk-19\bin\javaw.exe
+Launcher args:	-jar "C:\Users\lauri\OneDrive\Dokumente\java\time_standard_distribution\src\screensaver\time_distribution.exe"
+Args length:	110/32768 chars
+Exit code:	0
